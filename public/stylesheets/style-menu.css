@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: calc(100vh + 270px);
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* header css start*/
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin: 100px 100px 50px;
+    padding: 5px 40px;
+
+    border-bottom: 2px solid #232323;
+    box-shadow: 0 8px 7px -7px #F5C113;
+}
+
+#logo-text {
+    align-self: flex-end;
+
+    margin-left: 3px;
+
+    font-family: "Fredoka One", "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #232323;
+}
+
+#logo-text:hover, #logo-img:hover, #nav-button:hover {
+    cursor: pointer;
+}
+
+#nav-button {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+/* header css end */
+
+/* content css start */
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px 100px;
+    padding: 10px 40px;
+
+    border-bottom: 2px solid #232323;
+    box-shadow: 0 8px 7px -7px #F5C113;
+}
+
+.categories {
+    flex: 0 0 400px;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 20px;
+}
+
+.categories h2 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #232323;
+    box-shadow: 0 8px 7px -7px #F5C113;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1300px){
+    .content {
+        flex-direction: column;
+    }
+
+    .categories {
+        flex: 0 0 auto;
+    }
+}
+
+.menu-wrapper {
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: none;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    flex-basis: 350px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 50px;
+}
+
+.menu-item-header {
+    flex-basis: 260px;
+    display: flex;
+    flex-direction: column;
+
+    background-size: cover;
+}
+
+.menu-item-header:hover {
+    cursor: pointer;
+}
+
+.menu-item-text {
+    margin-top: auto;
+
+    padding: 5px 50px;
+    text-align: center;
+
+    background-color: rgba(245, 193, 19, 0.8);
+}
+
+.menu-item-desc {
+    display: none;
+}
+
+.menu-item-desc ul {
+    text-align: left;
+    list-style: square;
+}
+
+.menu-item-header:hover .menu-item-text {
+    height: 100%;
+    background-color: rgba(207, 163, 16, 0.8);
+}
+
+.menu-item-header:hover .menu-item-desc {
+    display: unset;
+}
+
+.menu-item-footer {
+    flex: 1 0 auto;
+    display: flex;
+}
+
+.menu-item-footer img {
+    transform: translate(-5px, 7px);
+}
+
+.price {
+    transform: translate(0, 18px);
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    color: #232323;
+}
+
+.btn-cart {
+    width: 180px;
+    height: 50px;
+    margin-top: auto;
+    margin-left: auto;
+
+    padding: 5px 5px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #232323;
+    text-align: center;
+
+    background-color: #F5C113;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    background-color: #CFA310;
+}
+/* content css end */
+
+/*footer css start*/
+.footer {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: row;
+
+    padding: 30px 140px;
+    background-color: #F5C113;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 40px;
+}
+
+h2 {
+    font-family: "Fredoka One", "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #232323;
+
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+h3, a, ul li {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #232323;
+
+    margin: 10px 0;
+}
+/* footer css end */

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: calc(100vh + 270px);
+    display: flex;
+    flex-direction: column;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    margin: 100px 100px 50px;
+    padding: 5px 40px;
+
+    border-bottom: 2px solid #232323;
+    box-shadow: 0 8px 7px -7px #F5C113;
+}
+
+#logo-text {
+    align-self: flex-end;
+
+    margin-left: 3px;
+
+    font-family: "Fredoka One", "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #232323;
+}
+
+#logo-text:hover, #logo-img:hover, #nav-button:hover {
+    cursor: pointer;
+}
+
+#nav-button {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.jumbotron {
+    flex-basis: 600px;
+
+    margin: 0 140px;
+    background-color: #F5C113;
+}
+
+.content {
+    flex: 1 0 auto;
+
+    margin: 10px 100px;
+    padding: 10px 40px;
+
+    border-bottom: 2px solid #232323;
+    box-shadow: 0 8px 7px -7px #F5C113;
+}
+
+.footer {
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: row;
+
+    padding: 30px 140px;
+    background-color: #F5C113;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 40px;
+}
+
+h2 {
+    font-family: "Fredoka One", "Arial Black", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #232323;
+
+    margin-bottom: 10px;
+}
+
+h3, a {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #232323;
+
+    margin: 10px 0;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Burger Lab - Menu</title>
+    <link rel="stylesheet" href="stylesheets/style-menu.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="javascripts/script-menu.js"></script>
+</head>
+<template id="test">
+    <div class="menu-item">
+        <div class="menu-item-header" style="background-color: lightsalmon">
+            <div class="menu-item-text">
+                <h3>Product Title</h3>
+                <div class="menu-item-desc">
+                </div>
+            </div>
+        </div>
+        <div class="menu-item-footer">
+            <div class="price">10 лв.</div>
+            <div class="btn-cart"><img src="assets/cart.png" alt="cart" width="30px" height="30px">Add to cart</div>
+        </div>
+    </div>
+</template>
+<body>
+<div class="container">
+    <div class="header">
+        <img id="logo-img" src="assets/logo.png" alt="logo">
+        <h1 id="logo-text">Burger Lab</h1>
+        <img id="nav-button" src="assets/nav-button.png" alt="Navigation Button">
+    </div>
+    <div class="content">
+        <div class="categories">
+            <h2>Categories</h2>
+            <a id="ctg-burgers">Burgers</a>
+            <a id="ctg-salads">Salads</a>
+            <a id="ctg-desserts">Desserts</a>
+        </div>
+        <div class="menu-wrapper">
+            <div id="burgers" class="menu">
+
+            </div>
+            <div id="salads" class="menu">
+
+            </div>
+            <div id="desserts" class="menu">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-section">
+            <h2>Navigation</h2>
+            <a class="footer-link" href="index.html">Home</a>
+            <a class="footer-link" href="menu.html">Menu</a>
+            <a class="footer-link" href="about.html">About us</a>
+        </div>
+        <div class="footer-section">
+            <h2>Contact us</h2>
+            <h3>Address: Street name XX, City, Country</h3>
+            <h3>Tel: +359 XX XXXX XXX</h3>
+            <h3>Email: support@burgerlab.com</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
