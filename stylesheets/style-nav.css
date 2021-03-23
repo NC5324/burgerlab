@@ -11,6 +11,7 @@
     border-right: 1px solid #232323;
 
     background-color: white;
+    z-index: 1;
 }
 
 #nav a {
