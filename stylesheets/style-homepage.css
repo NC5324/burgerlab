@@ -23,9 +23,9 @@ a:hover {
 }
 
 .header {
+    position: relative;
     display: flex;
     flex-direction: row;
-    position: relative;
 
     margin: 100px 100px 50px;
     padding: 5px 40px;
@@ -104,4 +104,5 @@ h3, a {
     color: #232323;
 
     margin: 10px 0;
+    cursor: pointer;
 }

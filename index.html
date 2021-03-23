@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Burger Lab</title>
     <link rel="stylesheet" href="stylesheets/style-homepage.css">
+    <link rel="stylesheet" href="stylesheets/style-nav.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -15,6 +17,11 @@
         <img id="logo-img" src="assets/logo.png" alt="logo">
         <h1 id="logo-text">Burger Lab</h1>
         <img id="nav-button" src="assets/nav-button.png" alt="Navigation Button">
+    </div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About us</a>
     </div>
     <div class="jumbotron">
 
@@ -39,3 +46,12 @@
 </div>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        const nav = document.querySelector('#nav')
+        nav.style.top = (document.querySelector('.header').getBoundingClientRect().bottom + 10) + 'px'
+        $('#nav-button').click(function() {
+            nav.style.visibility = nav.style.visibility !== 'visible' ? 'visible' : 'hidden'
+        })
+    })
+</script>

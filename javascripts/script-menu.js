@@ -13,6 +13,14 @@ $(document).ready(function (){
 
     $('#ctg-burgers').add($('#ctg-salads')).add($('#ctg-desserts')).click(function(event) { ctgSelect(event) })
 
+    $(document).ready(function () {
+        const nav = document.querySelector('#nav')
+        nav.style.top = (document.querySelector('.header').getBoundingClientRect().bottom + 10) + 'px'
+        $('#nav-button').click(function() {
+            nav.style.visibility = nav.style.visibility !== 'visible' ? 'visible' : 'hidden'
+        })
+    })
+
     function ctgSelect(event) {
         currentCtg.style.textDecoration = 'none'
         event.target.style.textDecoration = 'underline'
