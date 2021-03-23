@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const router = express.Router()
+const db = require('../services/menu.service')
+const cors = require('cors')
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('menu', { title: 'Burger Lab - Menu' });
-});
+router.get('/all', cors(), db.getAllProducts)
+router.get('/burgers', cors(), db.getProductsByCategory)
 
-module.exports = router;
+module.exports = router
