@@ -10,7 +10,8 @@ $(document).ready(function () {
                 for(let j=0; j<products.length; j++){
                     const clone = template.content.cloneNode(true)
                     clone.querySelector('.menu-item-text h3').textContent = products[j].name
-                    clone.querySelector('.menu-item-footer .price').textContent = products[j].price
+                    clone.querySelector('.menu-item-footer .price').textContent = products[j].price + ' лв.'
+                    clone.querySelector('.menu-item-header').style.background = products[j].img === null ? 'lightsalmon' : `url(${products[j].img})`
                     console.log(ctg[i])
                     document.querySelector(`#${ctg[i]}`).appendChild(clone)
                 }
