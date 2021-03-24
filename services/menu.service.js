@@ -1,5 +1,6 @@
 const pgp = require('pg-promise')(/* options */)
 const db = pgp('postgres://postgres:admin@localhost:5432/burgerlab')
+//const db = pgp('postgres://esfqdodb:k1sA-KkZ9dwj15wbfiKahUW5x9-QFvg9@hattie.db.elephantsql.com:5432/esfqdodb')
 
 function getAllProducts(req, res, next){
     db.any('SELECT * FROM product')
